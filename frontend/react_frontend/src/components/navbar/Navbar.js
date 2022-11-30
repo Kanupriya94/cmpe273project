@@ -32,7 +32,7 @@ function Navbar(props) {
   return (
     <div name="home" className={nav ? "navbar navbar-bg" : "navbar"}>
       <div className={nav ? "logo dark" : "logo"}>
-        <h2>Epic Hotel Booking</h2>
+        <h2>VacayBreak</h2>
       </div>
       <ul className="nav-menu">
         <Link to="/">
