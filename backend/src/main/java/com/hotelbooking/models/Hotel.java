@@ -4,6 +4,7 @@ import lombok.*;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 @Entity
 @Getter
@@ -11,7 +12,9 @@ import javax.validation.constraints.NotNull;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class Hotel {
+public class Hotel implements Serializable {
+
+  private static final long serialVersionUID = -4439114469417994311L;
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
